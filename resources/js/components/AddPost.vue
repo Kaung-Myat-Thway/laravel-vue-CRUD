@@ -2,17 +2,17 @@
     <div>
         <h3 class="text-center">Add Post</h3>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mx-auto bg-white border">
                 <form @submit.prevent="addPost">
-                    <div class="form-group">
+                    <div class="form-group mt-3">
                         <label>Title</label>
-                        <input type="text" class="form-control" v-model="post.title">
+                        <input type="text" placeholder="title here..." class="form-control" v-model="post.title">
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <input type="text" class="form-control" v-model="post.description">
+                        <input type="text" placeholder="description here..." class="form-control" v-model="post.description">
                     </div>
-                    <button type="submit" class="btn btn-primary">Add Post</button>
+                    <button type="submit" class="btn btn-primary mb-5">Add Post</button>
                 </form>
             </div>
         </div>
@@ -41,3 +41,5 @@
         }
     }
 </script>
+
+

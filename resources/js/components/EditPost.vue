@@ -2,7 +2,7 @@
     <div>
         <h3 class="text-center">Edit Post</h3>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mx-auto bg-white border">
                 <form @submit.prevent="updatePost">
                     <div class="form-group">
                         <label>Title</label>
